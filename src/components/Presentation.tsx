@@ -38,9 +38,12 @@ const PresentationStyled = styled.section`
 const PresentationImage = styled(Image)`
   max-width: 20rem;
   margin: 0 auto 2rem auto;
+  background: #202020 linear-gradient(180deg, transparent 0%, #202020 100%);
 
   @media screen and (min-width: ${tabletSize}) {
     margin-bottom: 0;
+    background-image: none;
+    background-color: #242424;
     position: absolute;
     top: 0;
     right: 0;
