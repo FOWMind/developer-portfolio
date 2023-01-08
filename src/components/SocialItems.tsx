@@ -33,4 +33,10 @@ const SocialItem = styled.a`
   &:not(:last-of-type) {
     margin-right: 1.5rem;
   }
+
+  &:hover {
+    svg {
+      color: #73d5a8;
+    }
+  }
 `
