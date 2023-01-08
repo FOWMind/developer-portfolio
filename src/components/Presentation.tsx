@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import manSmiling from '../assets/man-smiling.png'
-import { tabletSize } from '../utils'
+import { desktopSize, tabletSize } from '../utils'
 import { FeaturedText, Headline, Image, Paragraph, Button } from './'
 
 export function Presentation() {
@@ -28,6 +28,10 @@ const PresentationStyled = styled.section`
   @media screen and (min-width: ${tabletSize}) {
     text-align: left;
     padding: 8rem 0 0 2rem;
+  }
+
+  @media screen and (min-width: ${desktopSize}) {
+    padding-left: 0;
   }
 `
 

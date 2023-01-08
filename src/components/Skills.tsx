@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { tabletSize } from '../utils'
+import { desktopSize, tabletSize } from '../utils'
 import { HeadlineMedium, Paragraph } from './'
 
 export function Skills() {
@@ -61,13 +61,18 @@ const SkillsStyled = styled.section`
   @media screen and (min-width: ${tabletSize}) {
     text-align: left;
     border-bottom: none;
-    max-width: calc(100% - 4rem);
     margin: 4rem auto;
-    padding: 4rem 0 2rem 0;
+    padding: 2rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: ${desktopSize}) {
+    padding-left: 0;
+    padding-right: 0;
   }
 `
 
@@ -77,7 +82,11 @@ const Skill = styled.div`
   }
 
   @media screen and (min-width: ${tabletSize}) {
-    min-width: 45%;
+    width: 45%;
+  }
+
+  @media screen and (min-width: ${desktopSize}) {
+    width: 30%;
   }
 `
 

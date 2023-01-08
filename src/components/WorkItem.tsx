@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Work } from '../models/Work'
-import { tabletSize } from '../utils'
+import { desktopSize, tabletSize } from '../utils'
 import { Button, HeadlineSmall, Image, Paragraph } from './'
 
 export function WorkItem({ title, technologies, links, images }: Work) {
@@ -50,6 +50,10 @@ const WorkItemPreview = styled(Image)`
   height: auto;
   max-height: 300px;
   object-fit: cover;
+
+  @media screen and (min-width: ${desktopSize}) {
+    max-height: 500px;
+  }
 `
 
 const WorkItemTitle = styled(HeadlineSmall).attrs((props) => ({

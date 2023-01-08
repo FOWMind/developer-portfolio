@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 import { tabletSize } from '../utils'
-import { Contact, PersonalInfo } from './'
+import { AppContainer, Contact, PersonalInfo } from './'
 
 export function Footer() {
   return (
     <FooterStyled>
-      <Contact />
-      <FooterContent>
-        <PersonalInfo />
-      </FooterContent>
+      <AppContainer>
+        <Contact />
+        <FooterContent>
+          <PersonalInfo />
+        </FooterContent>
+      </AppContainer>
     </FooterStyled>
   )
 }

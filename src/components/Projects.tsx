@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { desktopSize } from '../utils'
 import { Button, Headline, Works } from './'
 
 export function Projects() {
@@ -16,6 +17,11 @@ export function Projects() {
 
 const ProjectsStyled = styled.section`
   padding: 2rem;
+
+  @media screen and (min-width: ${desktopSize}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
 const ProjectsHeader = styled.div`

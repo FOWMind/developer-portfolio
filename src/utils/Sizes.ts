@@ -1,1 +1,2 @@
 export const tabletSize = '768px'
+export const desktopSize = '1440px'
