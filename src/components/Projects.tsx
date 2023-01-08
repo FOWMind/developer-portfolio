@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <ProjectsStyled>
       <ProjectsHeader>
-        <Headline>Projects</Headline>
+        <ProjectsHeadline>Projects</ProjectsHeadline>
         <Button>Contact me</Button>
       </ProjectsHeader>
 
@@ -25,3 +25,8 @@ const ProjectsHeader = styled.div`
   flex-wrap: wrap;
   margin-bottom: 2rem;
 `
+
+const ProjectsHeadline = styled(Headline).attrs((props) => ({
+  ...props,
+  as: 'h3',
+}))``

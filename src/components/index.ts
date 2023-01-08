@@ -1,5 +1,7 @@
 export * from './AppContainer'
 export * from './common'
+export * from './Contact'
+export * from './Footer'
 export * from './Header'
 export * from './Presentation'
 export * from './Projects'

@@ -9,8 +9,8 @@ export function WorkItem({ title, technologies, links, images }: Work) {
       <WorkItemTitle>{title}</WorkItemTitle>
       {technologies && (
         <WorkItemTags>
-          {technologies.map((tech) => (
-            <WorkItemTag>{tech}</WorkItemTag>
+          {technologies.map((tech, i) => (
+            <WorkItemTag key={i}>{tech}</WorkItemTag>
           ))}
         </WorkItemTags>
       )}
@@ -41,7 +41,10 @@ const WorkItemPreview = styled(Image)`
   object-fit: cover;
 `
 
-const WorkItemTitle = styled(HeadlineSmall)`
+const WorkItemTitle = styled(HeadlineSmall).attrs((props) => ({
+  ...props,
+  as: 'h4',
+}))`
   text-transform: uppercase;
 `
 
@@ -53,7 +56,10 @@ const WorkItemTags = styled.ul`
   margin: 0.5rem 0;
 `
 
-const WorkItemTag = styled(Paragraph)`
+const WorkItemTag = styled(Paragraph).attrs((props) => ({
+  ...props,
+  as: 'li',
+}))`
   list-style-type: none;
   font-size: 1.15rem;
   text-transform: uppercase;

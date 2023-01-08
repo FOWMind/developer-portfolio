@@ -9,8 +9,8 @@ export function Works() {
 
   return (
     <WorksStyled>
-      {works.map((work) => (
-        <WorkItem {...work} />
+      {works.map((work, i) => (
+        <WorkItem key={work.id || i} {...work} />
       ))}
     </WorksStyled>
   )
