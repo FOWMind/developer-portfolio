@@ -19,9 +19,11 @@ export function Contact() {
   )
 }
 
-const ContactStyled = styled.section`
+export const ContactStyled = styled.section`
   text-align: center;
   overflow: hidden;
+  max-width: 30rem;
+  margin: 0 auto;
 `
 
 const ContactHeadline = styled(Headline)``

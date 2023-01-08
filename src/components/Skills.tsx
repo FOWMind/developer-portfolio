@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { tabletSize } from '../utils'
 import { HeadlineMedium, Paragraph } from './'
 
 export function Skills() {
@@ -56,11 +57,27 @@ const SkillsStyled = styled.section`
   border: 2px solid #cbcbcb;
   border-left: none;
   border-right: none;
+
+  @media screen and (min-width: ${tabletSize}) {
+    text-align: left;
+    border-bottom: none;
+    max-width: calc(100% - 4rem);
+    margin: 4rem auto;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 `
 
 const Skill = styled.div`
   &:not(:last-of-type) {
     margin-bottom: 2rem;
+  }
+
+  @media screen and (min-width: ${tabletSize}) {
+    min-width: 45%;
   }
 `
 
@@ -68,6 +85,10 @@ const SkillContent = styled.div`
   display: inline-block;
 `
 
-const SkillName = styled(HeadlineMedium)``
+const SkillName = styled(HeadlineMedium)`
+  @media screen and (min-width: ${tabletSize}) {
+    margin-bottom: 1rem;
+  }
+`
 
 const SkillExperience = styled(Paragraph)``

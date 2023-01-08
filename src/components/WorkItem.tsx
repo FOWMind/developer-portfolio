@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Work } from '../models/Work'
+import { tabletSize } from '../utils'
 import { Button, HeadlineSmall, Image, Paragraph } from './'
 
 export function WorkItem({ title, technologies, links, images }: Work) {
@@ -31,6 +32,16 @@ export function WorkItem({ title, technologies, links, images }: Work) {
 
 const WorkItemStyled = styled.div`
   margin-bottom: 2rem;
+
+  @media screen and (min-width: ${tabletSize}) {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 4rem;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
 `
 
 const WorkItemPreview = styled(Image)`

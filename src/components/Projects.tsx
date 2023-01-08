@@ -15,7 +15,7 @@ export function Projects() {
 }
 
 const ProjectsStyled = styled.section`
-  padding: 2rem 0;
+  padding: 2rem;
 `
 
 const ProjectsHeader = styled.div`

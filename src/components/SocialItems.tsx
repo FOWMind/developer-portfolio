@@ -30,6 +30,10 @@ const SocialItemsStyled = styled.div`
 `
 
 const SocialItem = styled.a`
+  width: 25px;
+  height: 25px;
+  padding: 0 0.25rem;
+
   &:not(:last-of-type) {
     margin-right: 1.5rem;
   }
