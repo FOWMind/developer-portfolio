@@ -52,11 +52,15 @@ const PresentationImage = styled(Image)`
 
 const PresentationContent = styled.div`
   @media screen and (min-width: ${tabletSize}) {
-    max-width: 35rem;
+    max-width: 30rem;
 
     br {
       display: none;
     }
+  }
+
+  @media screen and (min-width: ${desktopSize}) {
+    max-width: 35rem;
   }
 `
 
