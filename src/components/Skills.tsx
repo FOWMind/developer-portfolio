@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import { desktopSize, tabletSize } from '../utils'
-import { HeadlineMedium, Paragraph } from './'
+import { HeadlineMedium, Hr, Paragraph } from './'
 
 export function Skills() {
   return (
     <SkillsStyled>
+      <SkillsHr />
+
       <Skill>
         <SkillContent>
           <SkillName>HTML</SkillName>
@@ -46,6 +48,8 @@ export function Skills() {
           <SkillExperience>3 Years Experience</SkillExperience>
         </SkillContent>
       </Skill>
+
+      <SkillsHr />
     </SkillsStyled>
   )
 }
@@ -54,13 +58,9 @@ const SkillsStyled = styled.section`
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
-  border: 2px solid #cbcbcb;
-  border-left: none;
-  border-right: none;
 
   @media screen and (min-width: ${tabletSize}) {
     text-align: left;
-    border-bottom: none;
     margin: 4rem auto;
     padding: 2rem;
     padding-top: 4rem;
@@ -73,6 +73,14 @@ const SkillsStyled = styled.section`
   @media screen and (min-width: ${desktopSize}) {
     padding-left: 0;
     padding-right: 0;
+  }
+`
+
+const SkillsHr = styled(Hr)`
+  margin: 2rem 0;
+
+  &:last-of-type {
+    display: none;
   }
 `
 

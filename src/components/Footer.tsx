@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { tabletSize } from '../utils'
-import { AppContainer, Contact, PersonalInfo } from './'
+import { AppContainer, Contact, Hr, PersonalInfo } from './'
 
 export function Footer() {
   return (
@@ -8,6 +8,7 @@ export function Footer() {
       <AppContainer>
         <Contact />
         <FooterContent>
+          <FooterHr />
           <PersonalInfo />
         </FooterContent>
       </AppContainer>
@@ -29,5 +30,8 @@ const FooterStyled = styled.footer`
 const FooterContent = styled.div`
   padding: 2rem 0;
   margin-top: 4rem;
-  border-top: 2px solid #cbcbcb;
+`
+
+const FooterHr = styled(Hr)`
+  margin-top: 0;
 `
