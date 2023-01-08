@@ -1,4 +1,4 @@
-import { AppContainer, Header, Presentation, Skills } from './components'
+import { AppContainer, Header, Presentation, Projects, Skills } from './components'
 import { GlobalStyle } from './styles'
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Header />
       <Presentation />
       <Skills />
+      <Projects />
     </AppContainer>
   )
 }

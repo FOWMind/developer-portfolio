@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     line-height: 1.15;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -23,5 +24,9 @@ export const GlobalStyle = createGlobalStyle`
   img {
     display: block;
     max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
   }
 `

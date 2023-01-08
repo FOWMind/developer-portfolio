@@ -14,7 +14,7 @@ export function Presentation() {
       <PresentationDesc>
         Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.
       </PresentationDesc>
-      <PresentationButton>Contact Me</PresentationButton>
+      <PresentationButton>Contact me</PresentationButton>
     </PresentationStyled>
   )
 }
